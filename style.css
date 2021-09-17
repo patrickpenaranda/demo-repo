@@ -93,22 +93,11 @@ marquee {
     box-shadow: 0px 0px 5px #0277bd;
 }
 
-.bottom p:first-child{
-   line-height: 5px;
-   font-size: 10px;
-   text-indent: 45%;
+.bottom {
+display:flex;
+justify-content: center;
 }
-.bottom p:nth-child(2){
-    line-height: 5px;
-    font-size: 10px;
-    text-indent: 40%;
- }
-
- .bottom p:nth-child(3){
-    line-height: 5px;
-    font-size: 10px;
-    text-indent: 35%;
- }
+    
 button {
     cursor: pointer;
     border: none;
