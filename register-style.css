@@ -16,7 +16,6 @@ section img {
     position: relative;
     border-radius: 10px;
     box-shadow: rgba(110,110,110, 1) 0px 0px 10px;
-    min-width: 930px;
 }
 .main div {
     display: block;
@@ -30,4 +29,22 @@ section img {
     font-size: 1.5rem;
     width: 98%;
     
+}
+
+@media(max-width:690px){
+    .main {
+        width: 100%;
+    }
+    .main div {
+        width: 75%;
+    }
+    .main img {
+        transform: translateX(260px) translateY(-50%);
+    }
+}
+
+@media (max-width:490px) {
+    .main img {
+        transform: translateX(160px) translateY(-50%);
+    }
 }
