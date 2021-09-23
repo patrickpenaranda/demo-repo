@@ -53,4 +53,9 @@ section img {
     .main img {
         transform: translateX(120px) translateY(-50%);
     }
+@media(max-width:320px) {
+    .main img {
+        transform: translateX(100px) translateY(-50%);
+    }
+
 }
