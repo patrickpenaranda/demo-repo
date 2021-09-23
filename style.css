@@ -1,130 +1,119 @@
-html, body {
-    margin: 0;
-    padding-top: 10px;
+html,
+body {
+  margin: 0 2px;
+  padding-top: 10px;
 }
 
 .main {
-    width: 50%;
-    margin: 0 auto 150px;
-    letter-spacing: 1px;
-    line-height: 25px;
-    font-family: sans-serif;
+  width: 50%;
+  margin: 0 auto 150px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-family: sans-serif;
+  text-align: justify;
 }
 
 marquee {
-    color: white;
-    position: fixed;
-    bottom: 0;
-    padding-top: 5px;
-    background-color: rgb(22, 22, 92);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  padding-top: 5px;
+  background-color: rgb(22, 22, 92);
 }
 
 .main .top img {
-    height: 110px;
-    border-radius: 50%;
-    margin: 0 auto;
-    box-shadow: 0 10px 6px -6px black;
+  height: 110px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 10px 6px -6px black;
 }
 
 .main .top {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .main .top p {
-    margin: 2px;
+  margin: 2px;
 }
 .buttons {
-    width: 100%;
-    border: none;
+  width: 100%;
+  border: none;
 }
 
 .buttons #red {
-    font-size: 2em;
-    width: 100%;
-    background-color: red;
-    color: white;
-    font-weight: 800;
-    padding: 25px 0;
-    margin-bottom: 10px;
-    transition: all 2s ease;
-    animation: changingcolor 1s ease infinite alternate-reverse;
+  font-size: 2em;
+  width: 100%;
+  background-color: red;
+  color: white;
+  font-weight: 800;
+  padding: 25px 0;
+  margin-bottom: 10px;
+  transition: all 2s ease;
+  animation: changingcolor 1s ease infinite alternate-reverse;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
 }
 @keyframes changingcolor {
-    0% {
-        background-color: red;
-    }
-    100% {
-        background-color: rgb(92, 91, 91);
-    }
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: rgb(92, 91, 91);
+  }
 }
 .buttons .second-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
 .buttons .second-buttons .grey {
-    width: 45%;
-    background-color: rgb(146, 143, 143);
-    color: white;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 10px 0;
-    transition: all .25s ease .25s;
-    font-size: medium;
+  width: 45%;
+  background-color: rgb(146, 143, 143);
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  transition: all 0.25s ease 0.25s;
+  font-size: medium;
 }
 .buttons .second-buttons .grey:hover {
-    background-color: rgb(107, 106, 106);
+  background-color: rgb(107, 106, 106);
 }
 .buttons #blue {
-    width: 100%;
-    background-color: rgb(19, 118, 246);
-    color: white;
-    font-size: medium;
-    padding: 10px 0;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    transition: all .5s ease .5s;
+  width: 100%;
+  background-color: rgb(19, 118, 246);
+  color: white;
+  font-size: medium;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: all 0.5s ease 0.5s;
 }
 .buttons #blue:hover {
-    background-color: rgb(12, 94, 246);
-    box-shadow: 0px 0px 5px #0277bd;
+  background-color: rgb(12, 94, 246);
+  box-shadow:  rgba(12, 94, 246,1) 0px 0px 10px;
 }
 
-.bottom p:first-child{
-   line-height: 5px;
-   font-size: 10px;
-   text-indent: 45%;
+.bottom p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 5px;
 }
-.bottom p:nth-child(2){
-    line-height: 5px;
-    font-size: 10px;
-    text-indent: 40%;
- }
-
- .bottom p:nth-child(3){
-    line-height: 5px;
-    font-size: 10px;
-    text-indent: 35%;
- }
 button {
-    cursor: pointer;
-    border: none;
+  cursor: pointer;
+  border: none;
 }
 
-@media(max-width: 690px) {
-    .buttons .second-buttons .grey {
-        width: 100%;
-    }
-    .bottom p:first-child{
-        text-indent: 100px;
-    }
-    .bottom p:nth-child(2) {
-        text-indent: 50px;
-    }
-    .bottom p:nth-child(3) {
-        text-indent: 25px;
-    }
+@media (max-width: 690px) {
+  .buttons .second-buttons .grey {
+    width: 100%;
+  }
+  .main {
+    width: 85%;
+  }
 }
