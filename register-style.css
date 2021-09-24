@@ -63,6 +63,12 @@ option {
         left: 30%;
     }
 }
+@media (max-width: 330px) {
+    .main img {
+        left: 35%;
+        height: 100px;
+    }
+}
 @media (max-width: 290px) {
     .main img {
         left: 32%;
