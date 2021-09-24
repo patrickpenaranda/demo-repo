@@ -12,7 +12,10 @@ body {
   font-family: sans-serif;
   text-align: justify;
 }
-
+.main .top span {
+  font-size: 12px;
+  font-weight: bold;
+}
 marquee {
   color: white;
   position: fixed;
@@ -96,7 +99,7 @@ marquee {
 }
 .buttons #blue:hover {
   background-color: rgb(12, 94, 246);
-  box-shadow:  rgba(12, 94, 246,1) 0px 0px 10px;
+  box-shadow:  rgba(8, 63, 216, 10) 0px 0px 10px;
 }
 
 .bottom p {
