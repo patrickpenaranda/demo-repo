@@ -82,6 +82,7 @@ input[type="text"] {
     }
     .main span {
         width: 50%;
+        max-width: 50%;
         align-self: flex-start;
     }
     .main .fourth div {
