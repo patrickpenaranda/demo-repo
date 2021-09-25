@@ -11,29 +11,44 @@
     <section class = main>
         <img src="manila.png" alt="">
         <div id="inputs">
-            <span style="padding: 5px; background-color: red; color: white;font-size: 1.125rem;">Last Name</span>
-            <input type="text" name="last_name" id="lname">
-            <span style="padding: 5px; background-color: red; color: white;font-size: 1.125rem;">First Name</span>
-            <input type="text" name="first_name" id="fname">
-            <span style="font-size: 1.125; font-weight: bold;">Middle Name (Optional)</span>
-            <input type="text" name="middle_name" id="mname">
-            <span style="font-size: 1.125; font-weight: bold;">Suffix</span>
-            <select name="suffix" id="suffix" style="width: 100%;font-size: 1.75rem; margin-bottom: 1rem;">
-                <option value=""></option>
-                <option value="JR.">JR.</option>
-                <option value="SR.">SR.</option>
-                <option value="I">I</option>
-                <option value="II">II</option>
-                <option value="III">III</option>
-                <option value="IV">IV</option>
-                <option value="V">V</option>
-                <option value="VI">VI</option>
-            </select>
-            <span style="padding: 5px; background-color: red; color: white;font-size: 1.125rem;">Gender</span>
-            <select name="gender" id="gender" style="font-size: 1.75rem; width: 100%; margin-top: 10px; margin-bottom: 1rem;">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
+
+            <div class="first">
+                <span style="padding: 5px; background-color: red; color: white;font-size: 1.125rem;">Last Name</span>
+                <input type="text" name="last_name" id="lname">
+            </div>
+            <div class="second">
+                <span style= "padding: 5px; background-color: red; color: white;font-size: 1.125rem;">First Name</span>
+                <input type="text" name="first_name" id="fname">
+            </div>
+            <div class="third">
+                <span style="font-size: 1.125; font-weight: bold;">Middle Name (Optional)</span>
+                <input type="text" name="middle_name" id="mname">
+            </div>
+           <div class="fourth">
+               <div class="first_select">
+                    <span style="font-size: 1.125; font-weight: bold;">Suffix</span>
+                    <select name="suffix" id="suffix" style="width: 100%;font-size: 1.75rem;">
+                        <option value=""></option>
+                        <option value="JR.">JR.</option>
+                        <option value="SR.">SR.</option>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                        <option value="IV">IV</option>
+                        <option value="V">V</option>
+                        <option value="VI">VI</option>
+                    </select>
+               </div>
+               <div class="second_select">
+                    <span style="padding: 5px; background-color: red; color: white;font-size: 1.125rem;">Gender</span>
+                    <select name="gender" id="gender" style="font-size: 1.75rem; width: 100%; margin-top: 10px; margin-bottom: 1rem;">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+               </div>
+           </div>
+            <!-- 
+            
             <span style="padding: 5px; background-color: red; color: white;font-size: 1.125rem;">Month</span>
             <select name="month" id="month" style="font-size: 1.75rem; width: 100%; margin-top: 10px;">
                 <option value=""></option>
@@ -49,7 +64,7 @@
                 <option value="October">October</option>
                 <option value="November">November</option>
                 <option value="December">December</option>
-            </select>
+            </select> -->
         </div>
     </section>
 
