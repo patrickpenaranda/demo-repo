@@ -17,57 +17,111 @@ section img {
     height: 1000px;
     margin:  5rem auto;
     padding-bottom: 2rem;
-    position: relative;
     border-radius: 10px;
     box-shadow: rgba(110,110,110, 1) 0px 0px 10px;
     justify-content: center;
+    min-width: 50%;
 }
-.main div {
+
+.main .inputs {
     position: relative;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     top: 100px;
+    margin: 0 3rem;
     display: flex;
     flex-wrap: wrap;
-    
-}
-.main div .first {
-    width: 40%;
     height: fit-content;
-    margin: 0 2rem;
+    max-height: fit-content;
 }
 
-.main div .second {
-    width: 40%;
-    height: fit-content;
+.main .inputs .red {
+    height: 1.50rem;
+    max-height: 1.75rem;
     margin: 0;
+    background-color: red;
+    color: white;
+    padding: .25rem;
+    width: fit-content;
+    max-width: fit-content;
+    font-size: 1.25rem;
 }
-
-.main div .third {
-    width: 40%;
-    height: fit-content;
-    margin: 0 2rem;
-}
-
-.main div .fourth {
-    padding: 0;
-    width: 40%;
-    height: fit-content;
-}
-.main .fourth div {
+.main .inputs .black {
+    height: 1.50rem;
+    max-height: 1.75rem;
     margin: 0;
-    width: 25%;
+    color: black;
+    padding: .25rem;
+    width: fit-content;
+    max-width: 100%;
+    font-size: 1.15rem;
 }
-
-input[type="text"] {
-    font-size: 1.75rem;
+.main .inputs input[type="text"] {
+    margin-top: .25rem;
+    height: 1.50rem;
+    max-height: 1.75rem;
+    width: 80%;
+    font-size: 1.50rem;
 }
-
+.main .inputs .first, .second, .third, .fourth, 
+.fifth, .sixth, .eighth, .nineth{
+    width: 50%;
+    max-width: 50%;
+    height: fit-content;
+    max-height: fit-content;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: .50rem;
+}
+.main .inputs .nineth select, .eighth select {
+    width: 80%;
+    max-width: 80%;
+    margin-top: .25rem;
+    font-size: 1.25rem;
+    height: fit-content;
+}
+.main .inputs .seventh {
+    width:100%;
+    max-width: 100%;
+    height: fit-content;
+    max-height: fit-content;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: .50rem;
+}
+.main .inputs .fourth , .fifth{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .inputs .fourth div {
+    width: 50%;
+}
+.main .inputs .fourth select {
+    width: fit-content;
+    margin-top: .25rem;
+    max-width: fit-content;
+    font-size: 1.50rem;
+    height: 1.75rem;
+}
+.main .inputs .fifth div select {
+    width: fit-content;
+    margin-top: .25rem;
+    max-width: fit-content;
+    font-size: 1.25rem;
+    height: fit-content;
+}
+.main .inputs .fifth div:not(:last-child){
+    width: fit-content;
+    margin-right: 3rem;
+}
+.main .inputs .seventh input[type="text"] {
+    width: 90%;
+    max-width: 90%;
+}
 @media (max-width:720px) {
     .main img {
         height: 100px;
     }
-    .main div {
+    .main .inputs {
         width: 85%;
         flex-direction: column;
         align-items: center;
@@ -75,18 +129,58 @@ input[type="text"] {
     .main {
         width: 95%;
     }
-    .main div * {
+    
+    .main .inputs .first, .second , .third, .fourth,
+    .fifth, .sixth{
+        flex-direction: column;
+        width: 100%;
         max-width: 100%;
+        align-items: flex-start;
+    }
+    .main .inputs .seventh, .eighth, .nineth{
         width: 100%;
-        margin: 0;
+        max-width: 100%;
     }
-    .main span {
-        width: 50%;
-        max-width: 50%;
-        align-self: flex-start;
+    .main .inputs .eighth select{
+        width: 100%;
+        max-width: 100%;
     }
-    .main .fourth div {
+    .main .inputs .nineth select{
+        width: 100%;
+        max-width: 100%;
+    }
+    .main .inputs div input[type="text"] {
         width: 100%;
     }
+    .main .inputs .fourth div {
+        flex-direction: column;
+        width: 100%;
+        margin-top: .25rem;
+    }
+    .main .inputs .fourth div select {
+        width: 100%;
+        max-width: 100%;
+    }
+    .main .inputs .fifth div:nth-child(even) {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        margin-top: .25rem;
+    }
+    .main .inputs .fifth div:nth-child(odd) {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        margin-top: .25rem;
+    }
+    .main .inputs .fifth div select {
+        width: 100%;
+        max-width: 100%;
+    }
+    .main .inputs .seventh input[type="text"] {
+        width: 100%;
+        max-width: 100%;
+    }
+    
 
 }

@@ -10,24 +10,23 @@
 <body>
     <section class = main>
         <img src="manila.png" alt="">
-        <div id="inputs">
-
+        <div class="inputs">
             <div class="first">
-                <span style="padding: 5px; background-color: red; color: white;font-size: 1.125rem;">Last Name</span>
+                <h1 class = "red"> Last Name</h1>
                 <input type="text" name="last_name" id="lname">
             </div>
             <div class="second">
-                <span style= "padding: 5px; background-color: red; color: white;font-size: 1.125rem;">First Name</span>
+                <h1 class = "red">First Name</h1>
                 <input type="text" name="first_name" id="fname">
-            </div>
+            </div><br>
             <div class="third">
-                <span style="font-size: 1.125; font-weight: bold;">Middle Name (Optional)</span>
-                <input type="text" name="middle_name" id="mname">
+                <h1 class = "black" >Middle Name (Optional)</h1>
+                <input type="text" name="middle_name" id="mname">  
             </div>
-           <div class="fourth">
-               <div class="first_select">
-                    <span style="font-size: 1.125; font-weight: bold;">Suffix</span>
-                    <select name="suffix" id="suffix" style="width: 100%;font-size: 1.75rem;">
+            <div class="fourth">
+                <div class="first_select">
+                    <h1 class="black">Suffix</h1>
+                    <select>
                         <option value=""></option>
                         <option value="JR.">JR.</option>
                         <option value="SR.">SR.</option>
@@ -38,33 +37,120 @@
                         <option value="V">V</option>
                         <option value="VI">VI</option>
                     </select>
-               </div>
-               <div class="second_select">
-                    <span style="padding: 5px; background-color: red; color: white;font-size: 1.125rem;">Gender</span>
-                    <select name="gender" id="gender" style="font-size: 1.75rem; width: 100%; margin-top: 10px; margin-bottom: 1rem;">
+                </div>
+                <div class="second_select">
+                    <h1 class="red">Gender</h1>
+                    <select>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                     </select>
-               </div>
-           </div>
-            <!-- 
-            
-            <span style="padding: 5px; background-color: red; color: white;font-size: 1.125rem;">Month</span>
-            <select name="month" id="month" style="font-size: 1.75rem; width: 100%; margin-top: 10px;">
-                <option value=""></option>
-                <option value="January">January</option>
-                <option value="February">February</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-                <option value="May">May</option>
-                <option value="June">June</option>
-                <option value="July">July</option>
-                <option value="August">August</option>
-                <option value="September">September</option>
-                <option value="October">October</option>
-                <option value="November">November</option>
-                <option value="December">December</option>
-            </select> -->
+                </div>
+                
+            </div>
+
+            <div class="fifth">
+                <div class="first_select">
+                    <h1 class = "red" style="width: fit-content;">Month</h1>
+                    <select>
+                        <option value=""></option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </div>
+
+                <div class="second_select">
+                    <h1 class="red">Day</h1>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+                </div>
+
+                <div class="third_select">
+                    <h1 class="red">Year</h1>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">2009</option>
+                        <option value="">2008</option>
+                        <option value="">2007</option>
+                        <option value="">2006</option>
+                        <option value="">2005</option>
+                    </select>
+                </div>
+                
+            </div>
+          
+            <div class="sixth">
+                <h1 class="red">Mobile No.</h1>
+                <h1 class="red">(09XXXXXXXXX)</h1>
+                <input type="text" name="" id="">
+            </div> 
+            <div class="seventh">
+                <h1 class="red">Home Address</h1>
+                <input type="text" name="" id="">
+            </div>
+
+            <div class="eighth">
+                <h1 class="red">City/Area</h1>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">Sta.Ana</option>
+                    <option value="">Sta.Mesa</option>
+                    <option value="">Tondo</option>
+                </select>
+            </div>
+            <div class="nineth">
+                <h1 class="red">Barangay</h1>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">894</option>
+                    <option value="">895</option>
+                    <option value="">896</option>
+                    <option value="">900</option>
+                    <option value="">901</option>
+                    <option value="">902</option>
+                </select>
+            </div>
         </div>
     </section>
 
