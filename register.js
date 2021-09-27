@@ -14,7 +14,7 @@ window.onload = async ()=>{
     }
 
     
-         select_city.addEventListener("click",async (e)=>{
+    select_city.addEventListener("change",async (e)=>{
         let target = e.target;
         let area =  document.getElementById("barangay");
         if(target.value !== ""){
