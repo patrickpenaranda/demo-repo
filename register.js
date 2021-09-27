@@ -15,11 +15,13 @@ window.onload = async ()=>{
 
     
     select_city.addEventListener("change",async (e)=>{
-        let target = e.target;
-        let area =  document.getElementById("barangay");
-        if(target.selectedIndex === 0){
-            for(let i = 1; i<=100; i++) {
-                let areas_select = document.getElementById("barangay");
+        
+        
+        if(select_city.value === ""){
+            let areas_select = document.getElementById("barangay");
+            let lngth = await areas_select.length;
+            for(let i = 1; i<=lngth; i++) {
+                
                 areas_select.remove(areas_select.options[i]);
 
             }
@@ -28,9 +30,10 @@ window.onload = async ()=>{
             let barangay = await fetch('barangay.json').then((data)=>{return data.json()}).then((completedata)=> {
                 return completedata[select_city.value];
             })
-            
-            for(let i = 1; i<=100; i++) {
-                let areas_select = document.getElementById("barangay");
+            let areas_select = document.getElementById("barangay");
+            let lngth = await areas_select.length;
+            for(let i = 1; i<=lngth; i++) {
+                
                 areas_select.remove(areas_select.options[i]);
 
             }
