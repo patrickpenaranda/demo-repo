@@ -17,9 +17,6 @@ window.onload = async ()=>{
          select_city.addEventListener("click",async (e)=>{
         let target = e.target;
         let area =  document.getElementById("barangay");
-        for(let index = 0; index < area.length ;index++) {
-            console.log(area.options[index].text);
-        }
         if(target.value !== ""){
             let barangay = await fetch('barangay.json').then((data)=>{return data.json()}).then((completedata)=> {
                 return completedata[select_city.value];
