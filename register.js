@@ -17,7 +17,14 @@ window.onload = async ()=>{
     select_city.addEventListener("change",async (e)=>{
         let target = e.target;
         let area =  document.getElementById("barangay");
-        if(target.value !== ""){
+        if(target.selectedIndex === 0){
+            for(let i = 1; i<=100; i++) {
+                let areas_select = document.getElementById("barangay");
+                areas_select.remove(areas_select.options[i]);
+
+            }
+        } 
+        else {
             let barangay = await fetch('barangay.json').then((data)=>{return data.json()}).then((completedata)=> {
                 return completedata[select_city.value];
             })
@@ -35,12 +42,6 @@ window.onload = async ()=>{
                 area_option.setAttribute("id","barangays")
                 area_option.innerHTML = barangay[i]
                 areas_select.appendChild(area_option);
-            }
-        } else {
-            for(let i = 1; i<=100; i++) {
-                let areas_select = document.getElementById("barangay");
-                areas_select.remove(areas_select.options[i]);
-
             }
         }
         
