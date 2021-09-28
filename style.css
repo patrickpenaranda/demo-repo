@@ -1,6 +1,6 @@
 html,
 body {
-  margin: 0 2px;
+  margin: 0 0;
   padding-top: 10px;
 }
 
@@ -86,6 +86,7 @@ marquee {
 }
 .buttons .second-buttons .grey:hover {
   background-color: rgb(107, 106, 106);
+  box-shadow: 0px 0px 3px 3px grey;
 }
 .buttons #blue {
   width: 100%;
@@ -99,7 +100,7 @@ marquee {
 }
 .buttons #blue:hover {
   background-color: rgb(12, 94, 246);
-  box-shadow:  rgba(8, 63, 216, 10) 0px 0px 10px;
+  box-shadow:  rgba(8, 63, 216, 10) 0px 0px 3px 3px;
 }
 
 .bottom p {
