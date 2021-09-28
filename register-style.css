@@ -1,4 +1,4 @@
-body {
+html,body {
     font-size: 16px;
     font-family: Verdana;
 }
@@ -130,6 +130,30 @@ select {
     text-align: center;
     animation: changingcolor 1s ease-in-out infinite alternate-reverse;
 }
+.questions {
+    width: 100%;
+}
+.questions div h1 {
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(110,110,110,.3);
+    font-size: .75rem;
+    margin-right: 1rem;
+    transition: all 1s cubic-bezier(0.22, 0.17, 0.19, 1.16);
+}
+.questions div h1:hover {
+    background-color: rgb(19, 134, 241);
+    color: white;
+    box-shadow: 0px 0px 3px 3px rgb(12, 94, 246);
+}
+.questions .first-question,.second-question, .third-question, .fourth-question{
+    padding-bottom: .50rem;
+    border-bottom: 1px solid rgba(110,110,110, .3);
+}
+.questions p {
+    font-weight: bold;
+}
 @keyframes changingcolor {
     0% {
         background-color: red;
@@ -204,4 +228,12 @@ select {
     }
     
 
+}
+@media (max-width:420px) {
+    .questions div h1 {
+        font-size: .50rem;
+    }
+    .questions p {
+        font-size: .50rem;
+    }
 }

@@ -49,5 +49,31 @@ window.onload = async ()=>{
         }
         
     })
+    let file_name = document.getElementById("file-name");
+    file_name.onchange = ()=> {
+        let profile = document.getElementById("profile");
+        let file = file_name.files;
+        if(file.length > 0) {
+            let  fileReader = new FileReader();
+            fileReader.onload = (e)=> {
+                profile.src = e.target.result;
+            }
+            fileReader.readAsDataURL(file[0]);
+        }
+    }
+
+    let last_input = document.getElementById("lname");
+    last_input.addEventListener("keyup", (event)=> {
+        event.target.value = event.target.value.toUpperCase(); 
+        })
+    let first_input = document.getElementById("fname");
+    first_input.addEventListener("keyup", (event)=> {
+        event.target.value = event.target.value.toUpperCase(); 
+        })
+    let middle_input = document.getElementById("mname");
+    middle_input.addEventListener("keyup", (event)=> {
+        event.target.value = event.target.value.toUpperCase(); 
+        })
 }
+
 
