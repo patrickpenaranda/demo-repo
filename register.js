@@ -53,7 +53,7 @@ window.onload = async ()=>{
     
     //Profile change
     let file_name = document.getElementById("file-name");
-    file_name.onchange = ()=> {
+    file_name.onchange = async ()=> {
         let profile = document.getElementById("profile");
         let file = file_name.files;
         if(file.length > 0) {
@@ -61,7 +61,11 @@ window.onload = async ()=>{
             fileReader.onload = (e)=> {
                 profile.src = e.target.result;
             }
-            fileReader.readAsDataURL(file[0]);
+            profile.src = "loading-buffering.gif"
+            setTimeout(()=> {
+                fileReader.readAsDataURL(file[0]);
+            }, 2000)
+            
         }
     }
     //Capslock values
@@ -92,7 +96,8 @@ window.onload = async ()=>{
     fourth_choices_div.addEventListener("click",changehElement)
     function changehElement(element) {
         let target = element.target;
-        for(let i = 0; i <= 2; i++) {
+        target.style.cursor = "default"
+        for(let i = 0; i < target.parentElement.children.length; i++) {
             try {
                 if(target.parentElement.children[i].style.backgroundColor == "rgb(19, 134, 241)") {
                     target.parentElement.children[i].style.backgroundColor = "white"
