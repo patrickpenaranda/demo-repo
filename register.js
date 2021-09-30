@@ -131,6 +131,41 @@ window.onload = async ()=>{
         }
         
     })
+
+    //Slides
+    let div = document.getElementById("wrap");
+        let isClick = true;
+        div.addEventListener("click", async (event)=> {
+            if(isClick) {
+                let target = event.target;
+                div.style.backgroundColor = "rgb(14, 152, 233)"
+                let x = window.matchMedia("(max-width:720px)");
+                function mediaQuery(x){
+                    if(x.matches) {
+                        div.children[0].style.transform = "translateX(150px)"
+                    } else {
+                        div.children[0].style.transform = "translateX(225px)"
+                    }
+                }
+                mediaQuery(x);
+                x.addListener(mediaQuery);
+                setTimeout(()=> {
+                    
+                    div.children[1].style.color = "white"
+                    div.children[1].textContent = "HINDI";
+                },800)
+                isClick = false;
+            } else {
+                let target = event.target;
+                div.style.backgroundColor = "rgb(228, 60, 60)"
+                div.children[0].style.transform = "translateX(-25%)"
+                setTimeout(()=>{
+                    div.children[1].style.color = "white"
+                    div.children[1].textContent = "OO"
+                }, 800)
+                isClick = true;
+            }
+        })
 }
 
 
